@@ -1,4 +1,4 @@
-// Import for navLinks (uncreated)
+// Import for navBarLinks (uncreated)
 import NavLinks from "./NavBarLinks";
 
 const Header = () => {
