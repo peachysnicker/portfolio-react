@@ -1,5 +1,5 @@
-// Import for navBarLinks (uncreated)
-import NavLinks from "./NavBarLinks";
+// Import for navBarLinks
+import NavBarLinks from "./NavBarLinks";
 
 const Header = () => {
   return (
