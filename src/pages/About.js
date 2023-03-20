@@ -13,4 +13,4 @@ const AboutMe = () => {
   );
 };
 
-export default About;
+export default AboutMe;
