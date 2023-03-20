@@ -3,7 +3,7 @@ import AboutMe from "../components/AboutMe";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer"; //Dont forget to name Footer.js
 
-const AboutMe = () => {
+const About = () => {
   return (
     <section>
       <PageHeader title="About Mariah" description="Nice to meet you!" />
@@ -13,4 +13,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default About;
