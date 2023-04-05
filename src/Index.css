@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+#thanks {
+    background-color: #DEEDF0;
+}
+
+/* Landing Styles */
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DEEDF0;
+    font-size: 60px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: .2rem;
+  }
+
+  /* Centered Sub-text */
+.centered-subtext {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DEEDF0;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: .2rem;
+  }
