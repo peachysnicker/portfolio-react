@@ -189,19 +189,19 @@ button {
 }
 
 .emailLink {
-  color: #B2B8A3;
-  padding-left: 45%;
+  padding-left: 49%;
+  font-size: 2vw;
   text-decoration: none;
 }
 
 .emailLink:hover {
-  color: #000;
+  cursor:pointer;
 }
 
 .footerText{
   font-size: 1vw;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .footerSubText{

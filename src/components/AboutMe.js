@@ -28,6 +28,13 @@ const AboutMe = () => {
           My name is Mariah Feser, I am a full-stack developer from British
           Columbia, Canada.
         </h6>
+        <h6 className="reveal">
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        </h6>
       </div>
     </div>
   );
