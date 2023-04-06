@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.css";
 const Header = () => {
   return (
     <header>
-      {/* <div id="thanks" className="m-0">
-        <p className="p-2 m-0 text-center">Thank You for Stopping By!</p>
-      </div> */}
+      <div id="thanks" className="m-0">
+        <p className="p-2 m-0 text-center"></p>
+      </div>
       <nav class="navbar navbar-expand-lg navbar-light">
         <img
           id="logo"
@@ -29,22 +29,22 @@ const Header = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <a className="nav-link" href="#">
                 Home <span class="sr-only"></span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a className="nav-link" href="#">
                 About
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a className="nav-link" href="#">
                 Contact
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a className="nav-link" href="#">
                 Resume
               </a>
             </li>

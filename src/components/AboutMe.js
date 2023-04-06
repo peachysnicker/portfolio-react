@@ -3,8 +3,8 @@
 const AboutMe = () => {
   return (
     <div className="aboutContainer">
-      <h3>This is my About Me Component!</h3>
-      <h3>My Name is Mariah</h3>
+      <h2>About Mariah</h2>
+      <h3>Let me introduce myself!</h3>
       <h5> blah blah blah blah </h5>
     </div>
   );

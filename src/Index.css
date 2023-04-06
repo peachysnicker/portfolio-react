@@ -3,6 +3,10 @@
 #thanks {
     background-color: #DEEDF0;
 }
+/* NavBar Styles */
+.nav-link:hover {
+    font-size: 1.1vw;
+}
 
 /* Landing Styles */
 
@@ -13,9 +17,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #DEEDF0;
-    font-size: 60px;
+    font-size: 5vw;
     font-family: "Poppins", sans-serif;
     letter-spacing: .2rem;
+    animation: fadeIn 4s;
+  }
+
+  @media screen and (max-width: 670px) {
+    .centered {
+      font-size: 5vw;
+      top: 35%;
+    }
   }
 
   /* Centered Sub-text */
@@ -25,9 +37,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #DEEDF0;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: "Poppins", sans-serif;
     letter-spacing: .2rem;
+    animation: fadeIn 6s;
+  }
+
+  @media screen and (max-width: 670px) {
+    .centered-subtext {
+      font-size: 2vw;
+      top: 40%;
+    }
   }
 
   /* Socials links */
@@ -39,7 +59,19 @@
     width: 50px;
     padding: 10px 5px;
     border-radius: 0 20px 20px 0;
+    animation: fadeIn 1s;
 }
+
+.socials img:hover {
+    width: 105%;
+}
+
+@media screen and (max-width: 670px) {
+    .socials {
+        top: 35%;
+        width: 40px;
+    }
+  }
 
 .socials img {
     width: 100%;
@@ -49,5 +81,20 @@
 /* About Me Container */
 
 .aboutContainer {
-    padding-top: 50px;
+    background-color: #000;
+    padding-top: 50px; 
+    padding-left: 60px;
+    padding-bottom: 400px;
+    left: 50%;
+    color: #DEEDF0;
+    font-size: 5vw;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: .2rem;
+    animation: fadeIn 5s;
 }
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
