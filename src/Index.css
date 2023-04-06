@@ -50,6 +50,11 @@
     }
   }
 
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
   /* Socials links */
   .socials {
     position: fixed;
@@ -116,13 +121,12 @@
     left: 45%;
   }
 }
-/* About Me Container */
-
+/* About Me Styles */
 .aboutContainer {
     background-color: #000;
     padding-top: 50px; 
     padding-left: 60px;
-    padding-bottom: 400px;
+    padding-bottom: 80px;
     left: 50%;
     color: #DEEDF0;
     font-size: 5vw;
@@ -131,8 +135,77 @@
     animation: fadeIn 5s;
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: 2s all ease;
+  padding: 5px;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+/* Form Styles */
+
+.formTitle {
+  text-align: center;
+  padding-top: 20px;
+ 
+}
+
+.formSubTitle {
+  text-align: center;
+}
+
+.form {
+ padding:40px 200px;
+ text-align: center;
+ display: grid;
+ grid-gap: 15px;
+ grid-template-columns: repeat(1, 1fr);
+ grid-template-rows: 3em 3em;
+}
+
+input {
+  width: 100%;
+}
+
+.messageInput {
+  height: 100px;
+  /* text-align:start; */
+}
+
+button {
+  width: 10%;
+}
+
+
+/* Footer Styles */
+.footerContainer {
+  padding: 10px;
+  background-color: #DEEDF0;
+}
+
+.emailLink {
+  color: #B2B8A3;
+  padding-left: 45%;
+  text-decoration: none;
+}
+
+.emailLink:hover {
+  color: #000;
+}
+
+.footerText{
+  font-size: 1vw;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footerSubText{
+  font-size: 0.7vw;
+  padding: 0;
+  text-align: center;
+}

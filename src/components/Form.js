@@ -1,12 +1,10 @@
-// COPIED FROM ACTIVITY 15 - have not fully reviewed it yet
 import React, { useState } from "react";
 
 function Form() {
-  // Here we set two state variables for firstName and lastName using `useState`
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  // Here we set state variables for name using `useState`
+  const [name, setName] = useState("");
 
-  // ME: Adding email and message input for the form
+  // ME: Adding email and message input for the form?
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -25,26 +23,22 @@ function Form() {
     e.preventDefault();
 
     // ME: removed aler - Alert the user their first and last name, clear the inputs
-    setFirstName("");
-    setLastName("");
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
     <div>
+      <h4 className="formTitle">Contact</h4>
+      <h6 className="formSubTitle">Please fill out the form</h6>
       <form className="form">
         <input
-          value={firstName}
-          name="firstName"
+          value={name}
+          name="name"
           onChange={handleInputChange}
           type="text"
-          placeholder="First Name"
-        />
-        <input
-          value={lastName}
-          name="lastName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Last Name"
+          placeholder="Name"
         />
         <input
           value={email}
@@ -55,13 +49,14 @@ function Form() {
         />
         {/* Will have to add more input text box for message option */}
         <input
+          className="messageInput"
           value={message}
           name="message"
           onChange={handleInputChange}
           type="text"
-          placeholder="message"
+          placeholder="Message"
         />
-        <button type="button" onClick={handleFormSubmit}>
+        <button type="button" className="Button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>

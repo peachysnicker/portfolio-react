@@ -1,10 +1,14 @@
-// Do I need to import anything for my footer?
-
 const Footer = () => {
   return (
     <footer>
-      <p>Footer Hooter Here</p>
-      <p>Maybe add my contact links here?</p>
+      <div className="footerContainer">
+        <a className="emailLink" href="mailto:feser.mk@gmail.com">
+          Click Here to Email
+          {/* <img src="" alt="Mail icon" /> */}
+        </a>
+        <p className="footerText">Created by Mariah Feser with ♥</p>
+        <p className="footerSubText"> © 2023</p>
+      </div>
     </footer>
   );
 };
