@@ -12,6 +12,11 @@ const Landing = () => {
       <div>
         <h6 className="centered">Mariah Feser</h6>
         <p className="centered-subtext">Full-Stack Developer</p>
+        <div className="bounce">
+          <a href="#about">
+            <i className="arrow"></i>
+          </a>
+        </div>
         <div class="socials">
           <a
             href="https://github.com/peachysnicker"

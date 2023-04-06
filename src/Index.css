@@ -78,6 +78,44 @@
     padding: 5px 1px;
 }
 
+/* Bouncing arrow */
+.arrow {
+  border: solid #F4C7AB;
+  border-width: 0 8px 8px 0;
+  padding: 15px;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  padding-top: 30px;
+}
+
+@keyframes bounce {
+
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(30px);
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .bounce {
+    top: 40%;
+    left: 45%;
+  }
+}
 /* About Me Container */
 
 .aboutContainer {
