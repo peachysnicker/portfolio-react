@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
+
 #thanks {
     background-color: #DEEDF0;
 }
@@ -233,16 +234,21 @@
 /* Form Styles */
 .formTitle {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
  
 }
 
 .formSubTitle {
+  padding-top: 40px;
+  line-height: 1.7;
+  font-weight: 100;
   text-align: center;
+
 }
 
 .form {
- padding:40px 200px;
+ padding:100px;
+ margin-left: 140px;
  text-align: center;
  display: grid;
  grid-gap: 15px;
@@ -251,23 +257,33 @@
 }
 
 input {
-  width: 100%;
+  width: 80%;
+  border: solid 1px #F4C7AB;
+  border-radius: 6px;
+  color: #F4C7AB;
 }
+  
+  input:focus, textarea:focus, select:focus {
+  
+  outline-offset: 0px !important;
+  
+  outline: none !important;
+  }
 
 .messageInput {
   height: 100px;
   /* text-align:start; */
 }
 
-button {
+.button {
   width: 100px;
   height: 45px;
-  font-size: 0.7vw;
+  font-size: 1vw;
   color: #FFF;
   letter-spacing: 2.1px;
   background-color: #F4C7AB;
   border: none;
-  border-radius: 6px;
+  border-radius: 20px;
   transition: all 0.2s ease 0s;
   cursor: pointer;
   }
@@ -279,7 +295,6 @@ button:hover {
   transform: translateY(-1px);
   color:#000;
 }
-
 
 /* Footer Styles */
 .footerContainer {
