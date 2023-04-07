@@ -29,23 +29,33 @@ const Header = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#thanks">
                 Home <span class="sr-only"></span>
               </a>
             </li>
             <li class="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#about">
                 About
               </a>
             </li>
             <li class="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#resume">
+                Resume
+              </a>
+            </li>
+            <li class="nav-item">
+              <a className="nav-link" href="#contactForm">
                 Contact
               </a>
             </li>
             <li class="nav-item">
-              <a className="nav-link" href="#">
-                Resume
+              <a
+                className="nav-link"
+                href="https://github.com/peachysnicker"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Portfolio
               </a>
             </li>
           </ul>

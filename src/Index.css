@@ -147,8 +147,64 @@
   opacity: 1;
 }
 
-/* Form Styles */
+/* Resume Styles */
 
+.container{
+	width: 100%;
+}
+
+.text{
+	font-size: 3vw;;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	animation: slide-in-anim 1.5s ease-out forwards;
+}
+
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-25%);
+	}
+	75% {
+		transform: translateX(-30%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+
+
+/* Contact Styles */
+#waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.1));
+  font-size: 60px;
+}
+#waviy span {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  animation: waviy 3.5s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-15px)
+  }
+}
+
+/* Form Styles */
 .formTitle {
   text-align: center;
   padding-top: 20px;
@@ -178,7 +234,24 @@ input {
 }
 
 button {
-  width: 10%;
+  width: 100px;
+  height: 45px;
+  font-size: 0.7vw;
+  color: #FFF;
+  letter-spacing: 2.1px;
+  background-color: #F4C7AB;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  }
+
+button:hover {
+  box-shadow: 0px 10px 15px #ffd3b7;
+  background-color: #FFF5EB;
+  border: #F4C7AB;
+  transform: translateY(-1px);
+  color:#000;
 }
 
 

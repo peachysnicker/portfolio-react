@@ -29,9 +29,19 @@ function Form() {
   };
 
   return (
-    <div>
-      <h4 className="formTitle">Contact</h4>
-      <h6 className="formSubTitle">Please fill out the form</h6>
+    <div id="contactForm">
+      <h4 id="waviy" className="formTitle">
+        <span style={{ "--i": 0 }}>C</span>
+        <span style={{ "--i": 1 }}>O</span>
+        <span style={{ "--i": 2 }}>N</span>
+        <span style={{ "--i": 3 }}>T</span>
+        <span style={{ "--i": 4 }}>A</span>
+        <span style={{ "--i": 0 }}>C</span>
+        <span style={{ "--i": 3 }}>T</span>
+      </h4>
+      <h6 className="formSubTitle">
+        Get in touch or send an email directly to feser.mk@gmail.com
+      </h6>
       <form className="form">
         <input
           value={name}
@@ -57,7 +67,7 @@ function Form() {
           placeholder="Message"
         />
         <button type="button" className="Button" onClick={handleFormSubmit}>
-          Submit
+          submit
         </button>
       </form>
     </div>
