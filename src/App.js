@@ -1,21 +1,31 @@
+import React from "react";
 import "./Index.css";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Landing from "./components/Landing";
-import About from "./components/AboutMe";
-import Resume from "./components/Resume";
-import Form from "./components/Form";
+import Socials from "./components/Socials";
+import About from "./pages/About";
+import Resume from "./pages/Resume";
 import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Landing />
-      <About />
-      <Resume />
-      <Form />
-      <Footer />
-    </>
+    <div>
+      <Router>
+        <Header />
+        <Socials />
+        <>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

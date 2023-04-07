@@ -22,18 +22,21 @@ const AboutMe = () => {
   return (
     <div id="about" className="aboutContainer">
       <div>
-        <h2 className="reveal">About Me</h2>
-        <h3 className="reveal">Let me introduce myself!</h3>
-        <h6 className="reveal">
+        {/* <h2 className="reveal">About Me</h2> */}
+        <h3 className="reveal1 aboutTitle">Let me introduce myself!</h3>
+        <p className="reveal aboutSubTitle">
           My name is Mariah Feser, I am a full-stack developer from British
           Columbia, Canada.
-        </h6>
-        <h6 className="reveal">
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        </p>
+        <h6 className="reveal aboutText">
+          From almost a decade in the beauty industry as an owner and operator,
+          it was time to switch gears. Although the love of doing permanent
+          cosmetic tattoos is still strong, the search for a more mentally
+          challenging career landed myself in the world of software and web
+          development. This new world seems to have no end in sight of the
+          possibilities of learning and forward thinking. <br></br> Thank you
+          for taking the time to visit my react portfolio and I look forward to
+          chatting soon!
         </h6>
       </div>
     </div>

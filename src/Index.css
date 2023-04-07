@@ -25,8 +25,8 @@
 
   @media screen and (max-width: 670px) {
     .centered {
-      font-size: 5vw;
-      top: 35%;
+      font-size: 5.5vw;
+      top: 30%;
     }
   }
 
@@ -45,8 +45,8 @@
 
   @media screen and (max-width: 670px) {
     .centered-subtext {
-      font-size: 2vw;
-      top: 40%;
+      font-size: 2.5vw;
+      top: 35%;
     }
   }
 
@@ -125,7 +125,8 @@
 .aboutContainer {
     background-color: #000;
     padding-top: 50px; 
-    padding-left: 60px;
+    padding-left: 150px;
+    padding-right: 60px;
     padding-bottom: 80px;
     left: 50%;
     color: #DEEDF0;
@@ -142,10 +143,35 @@
   transition: 2s all ease;
   padding: 5px;
 }
+
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
 }
+
+.aboutTitle {
+  color: #F4C7AB;
+  font-size: 3.5vw;
+  font-weight: 100;
+}
+
+.aboutSubTitle {
+  font-size: 1.5vw;
+  font-weight: 200;
+  color: white;
+}
+
+.aboutText {
+  padding-top: 10px;
+  font-weight: 180;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 670px) {
+    .aboutSubTitle {
+       font-size: 3vw;
+    }
+  }
 
 /* Resume Styles */
 
@@ -282,3 +308,15 @@ button:hover {
   padding: 0;
   text-align: center;
 }
+
+@media screen and (max-width: 670px) {
+    .footerText{
+       font-size: 2.7vw;
+    }
+     .footerSubText{
+       font-size: 2.7vw;
+    }
+     .emailLink{
+       font-size: 4vw;
+    }
+  }

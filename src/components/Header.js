@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
 const Header = () => {
@@ -29,24 +31,24 @@ const Header = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a className="nav-link" href="#thanks">
+              <Link className="nav-link" to="/">
                 Home <span class="sr-only"></span>
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a className="nav-link" href="#about">
+              <Link className="nav-link" to="about">
                 About
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a className="nav-link" href="#resume">
+              <Link className="nav-link" to="/resume">
                 Resume
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a className="nav-link" href="#contactForm">
+              <Link className="nav-link" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
               <a
