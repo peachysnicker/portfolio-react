@@ -15,29 +15,26 @@ const Contact = () => {
         directly. <br></br> A response should be received within a couple of
         hours
       </h6>
-      <form className="form">
-        <input
-          className=""
-          value="name"
-          name="name"
-          type="text"
-          placeholder="Name"
-        />
-        <input
-          className=""
-          value="email"
-          name="email"
-          type="email"
-          placeholder="Email"
-        />
+      <form
+        className="form"
+        action="mailto:feser.mk@gmail.com"
+        onSubmit={(event) => {
+          event.preventDefault(); // Prevents the form from submitting normally
+          const formData = new FormData(event.target); // Creates a FormData object from the form data
+          const formValues = Object.fromEntries(formData.entries()); // Converts the FormData object to a plain object
+          console.log(formValues); // Outputs the form data to the console (optional)
+          event.target.reset(); // Resets the form after submission
+        }}
+      >
+        <input className="" name="name" type="text" placeholder="Name" />
+        <input className="" name="email" type="email" placeholder="Email" />
         <input
           className="messageInput"
-          value="message"
           name="message"
           type="text"
           placeholder="Message"
         />
-        <button type="button" className="button">
+        <button type="submit" className="button">
           submit
         </button>
       </form>
