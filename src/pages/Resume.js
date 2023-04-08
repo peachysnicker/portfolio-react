@@ -3,12 +3,20 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div id="resume" className="container">
-      <p className="text">Download resume</p>
-      <p className="">click there → </p>
-      <div>
-        <p>RESUME DOWNLOAD ICON</p>
+    <div id="resume" className="resumeContainer">
+      <p className="resumeTitle">Resume</p>
+      <div className="downloadContainer">
+        <p className="resumeDownload">Click to Download</p>
+        <a href="./images/resume.pdf" download>
+          <img
+            className="downloadIcon"
+            src="./images/download.png"
+            alt="download symbol"
+          ></img>
+        </a>
       </div>
+
+      <img className="resumeImage" src="./images/resume.png" alt="resume"></img>
     </div>
   );
 };

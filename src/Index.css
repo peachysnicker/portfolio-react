@@ -176,19 +176,21 @@
 
 /* Resume Styles */
 
-.container{
+.resumeContainer{
 	width: 100%;
 }
 
-.text{
-	font-size: 3vw;;
+.resumeTitle{
+	font-size: 4vw;;
 	text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
 	padding: 0;
 	margin: 0;
 	margin-left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	animation: slide-in-anim 1.5s ease-out forwards;
+	animation: slide-in-anim 5s ease-out forwards;
 }
 
 @keyframes slide-in-anim {
@@ -196,10 +198,12 @@
 		opacity: 0;
 	}
 	60% {
-		transform: translateX(-25%);
+    opacity: 0.5;
+		transform: translateX(-55%);
 	}
 	75% {
-		transform: translateX(-30%);
+    opacity: 0.5;
+		transform: translateX(-65%);
 	}
 	100% {
 		opacity: 1;
@@ -207,6 +211,27 @@
 	}
 }
 
+.downloadContainer{
+  text-align: end;
+  padding-right: 100px;
+}
+
+.resumeDownload {
+  font-size: 1vw;
+  padding-left: 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+.downloadIcon {
+  width: 7%;
+  height: 10%;
+  padding-left: 60px;
+}
+
+.resumeImage {
+  width: 80%;
+  padding-left: 300px;
+}
 
 /* Contact Styles */
 #waviy {

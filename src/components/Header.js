@@ -35,11 +35,11 @@ const Header = () => {
                 Home <span class="sr-only"></span>
               </Link>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link className="nav-link" to="about">
                 About
               </Link>
-            </li>
+            </li> */}
             <li class="nav-item">
               <Link className="nav-link" to="/resume">
                 Resume
