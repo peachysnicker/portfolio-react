@@ -24,7 +24,7 @@ const Contact = () => {
       <form
         className="form"
         action="https://formsubmit.co/feser.mk@gmail.com"
-        method="post"
+        method="POST"
         onSubmit={(event) => {
           event.preventDefault(); // Prevents the form from submitting normally
           const formData = new FormData(event.target); // Creates a FormData object from the form data
@@ -44,7 +44,7 @@ const Contact = () => {
         <input
           type="hidden"
           name="_next"
-          value="https://mariahfeser.herokuapp.com/thankyou"
+          value="https://mariahfeser.herokuapp.com/pages/thankyou"
         />
         <button type="submit" className="button">
           submit
