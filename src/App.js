@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Socials from "./components/Socials";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import ThankYou from "./pages/ThankYou";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/thankyou" element={<ThankYou />} />
           </Routes>
         </>
         <Footer />
