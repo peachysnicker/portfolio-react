@@ -25,13 +25,13 @@ const Contact = () => {
         className="form"
         action="https://formsubmit.co/feser.mk@gmail.com"
         method="POST"
-        onSubmit={(event) => {
-          event.preventDefault(); // Prevents the form from submitting normally
-          const formData = new FormData(event.target); // Creates a FormData object from the form data
-          const formValues = Object.fromEntries(formData.entries()); // Converts the FormData object to a plain object
-          console.log(formValues); // Outputs the form data to the console (optional)
-          event.target.reset(); // Resets the form after submission
-        }}
+        // onSubmit={(event) => {
+        //   event.preventDefault(); // Prevents the form from submitting normally
+        //   const formData = new FormData(event.target); // Creates a FormData object from the form data
+        //   const formValues = Object.fromEntries(formData.entries()); // Converts the FormData object to a plain object
+        //   console.log(formValues); // Outputs the form data to the console (optional)
+        //   event.target.reset(); // Resets the form after submission
+        // }}
       >
         <input name="name" type="text" placeholder="Name" />
         <input name="email" type="email" placeholder="Email" />
@@ -41,11 +41,11 @@ const Contact = () => {
           type="text"
           placeholder="Message"
         />
-        <input
+        {/* <input
           type="hidden"
           name="_next"
           value="https://mariahfeser.herokuapp.com/pages/thankyou"
-        />
+        /> */}
         <button type="submit" className="button">
           submit
         </button>
