@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="row">
+    <div>
       <h4 id="waviy" className="formTitle">
         <span style={{ "--i": 0 }}>C</span>
         <span style={{ "--i": 1 }}>O</span>
@@ -11,10 +11,16 @@ const Contact = () => {
         <span style={{ "--i": 3 }}>T</span>
       </h4>
       <h6 className="formSubTitle">
-        Do you have any questions? <br></br> Please do not hesitate to contact
+        Do you have any questions?<br></br> Please do not hesitate to contact
         directly. <br></br> A response should be received within a couple of
-        hours
+        hours.
       </h6>
+      <a href="mailto:feser.mk@gmail.com">
+        <h6 className="formSubTitle2">
+          Email directly to feser.mk@gmail.com <br></br>{" "}
+          <p className="emailLink2">📧</p>
+        </h6>
+      </a>
       <form
         className="form"
         action="mailto:feser.mk@gmail.com"
@@ -26,8 +32,8 @@ const Contact = () => {
           event.target.reset(); // Resets the form after submission
         }}
       >
-        <input className="" name="name" type="text" placeholder="Name" />
-        <input className="" name="email" type="email" placeholder="Email" />
+        <input name="name" type="text" placeholder="Name" />
+        <input name="email" type="email" placeholder="Email" />
         <input
           className="messageInput"
           name="message"

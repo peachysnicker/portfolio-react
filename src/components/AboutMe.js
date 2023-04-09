@@ -34,9 +34,9 @@ const AboutMe = () => {
           cosmetic tattoos is still strong, the search for a more mentally
           challenging career landed myself in the world of software and web
           development. This new world seems to have no end in sight of the
-          possibilities of learning and forward thinking. <br></br> Thank you
-          for taking the time to visit my react portfolio and I look forward to
-          chatting soon!
+          possibilities of learning and forward thinking, which I am so excited
+          to be a part of. <br></br> Thank you for taking the time to visit my
+          react portfolio and I look forward to chatting soon!
         </h6>
       </div>
     </div>

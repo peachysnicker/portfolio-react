@@ -1,6 +1,6 @@
 const Socials = () => {
   return (
-    <div class="socials">
+    <div className="socials">
       <a
         href="https://github.com/peachysnicker"
         rel="noreferrer"
