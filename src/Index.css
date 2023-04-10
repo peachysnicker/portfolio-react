@@ -39,11 +39,11 @@ nav {
   @media screen and (max-width: 670px) {
     .centered-subtext {
       font-size: 2.5vw;
-      top: 65%;
+      top: 37%;
     }
     .centered {
       font-size: 5.5vw;
-      top: 68%
+      top: 32%
     }
   }
     @media screen and (max-width: 440px) {
@@ -134,9 +134,21 @@ nav {
     top: 65%;
     left: 45%;
   }
-  .arrow {
-    display: none;
+  .bounce{
+    top: 45%;
   }
+  
+}
+
+@media screen and (max-width: 440px) {
+  .bounce {
+    top: 65%;
+    left: 45%;
+  }
+  .bounce{
+    top: 30%;
+  }
+ 
 }
 
 /* About Me Styles */
