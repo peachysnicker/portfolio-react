@@ -446,7 +446,7 @@ input:focus, textarea:focus, select:focus {
   border-radius: 20px;
   transition: all 0.2s ease 0s;
   cursor: pointer;
-  } */
+  } 
 
 button:hover {
   box-shadow: 0px 10px 15px #ffd3b7;
