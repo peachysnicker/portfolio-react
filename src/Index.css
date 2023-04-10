@@ -317,20 +317,17 @@ nav {
       visibility: hidden;
     }
 
-    .downloadContainer2{
-      padding-left: 30%;
-    }
-
     .resumeDownload2{
       padding-bottom: 0;
+      padding-left: 140px;
       margin-bottom: 0;
       font-weight: 200;
       color: #000;
+
     }
 
-    .downloadLink{
-      padding-left: 60px;
-      padding-bottom: 20px;
+    .downloadLink  {
+      padding-left: 45%;
     }
 
     .resumeImage{
