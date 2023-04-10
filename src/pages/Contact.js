@@ -34,11 +34,11 @@ const Contact = () => {
           type="text"
           placeholder="Message"
         />
-        {/* <input
+        <input
           type="hidden"
           name="_next"
-          value="https://mariahfeser.herokuapp.com/pages/thankyou"
-        /> */}
+          value="https://mariahfeser.herokuapp.com/thankyou"
+        />
         <button type="submit" className="button">
           submit
         </button>

@@ -9,6 +9,10 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
@@ -29,12 +33,12 @@ const Header = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/" onClick={closeMenu}>
                 Home <span className="sr-only"></span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/resume">
+              <Link className="nav-link" to="/resume" onClick={closeMenu}>
                 Resume
               </Link>
             </li>
@@ -44,12 +48,13 @@ const Header = () => {
                 href="https://www.linkedin.com/in/mariah-feser-ab8250243/"
                 rel="noreferrer"
                 target="_blank"
+                onClick={closeMenu}
               >
                 LinkedIn
               </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link" to="/contact" onClick={closeMenu}>
                 Contact
               </Link>
             </li>
@@ -59,6 +64,7 @@ const Header = () => {
                 href="https://github.com/peachysnicker"
                 rel="noreferrer"
                 target="_blank"
+                onClick={closeMenu}
               >
                 Portfolio
               </a>

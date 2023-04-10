@@ -49,12 +49,12 @@ nav {
     @media screen and (max-width: 440px) {
     .centered{
       font-size: 6vw;
-      top: 20%
+      top: 25%
     }
 
     .centered-subtext {
       font-size: 2.5vw;
-      top: 23%;
+      top: 28%;
     }
   }
 
@@ -297,10 +297,6 @@ nav {
       width: 90%;
        padding-left: 50px;
     }
-    
-    /* .downloadIcon {
-      width: 8%;
-    } */
 
     .downloadContainer{
       visibility: hidden;
@@ -319,7 +315,7 @@ nav {
 
     .resumeDownload2{
       padding-bottom: 0;
-      padding-left: 140px;
+      padding-left: 120px;
       margin-bottom: 0;
       font-weight: 200;
       color: #000;
@@ -474,6 +470,48 @@ button:hover {
   .button {
     font-size: 2vw;
   }
+}
+
+@media screen and (max-width: 440px) {
+  .formSubTitle{
+    margin-left: 20px;
+  }
+
+  .formSubTitle2{
+    font-size: 3vw;
+  }
+
+  .emailLink2 {
+    font-size: 6vw;
+  }
+
+  .form {
+    padding: 10px;
+     margin-left: 25px;
+     margin-right: 25px;
+  }
+
+  .button {
+    font-size: 3vw;
+  }
+ 
+}
+
+/* Thank you styles */
+.thankSub {
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.thankText {
+  padding-bottom: 40px;
+}
+
+.home-link {
+  border: 1px solid black;
+  margin: 50px 50px 50px 50px;
+  padding: 5px;
+  color: #000;
 }
 
 /* Footer Styles */
