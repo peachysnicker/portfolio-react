@@ -8,10 +8,10 @@ input:focus::placeholder {
 }
 
 /* Top Bar Styles */
-#thanks {
-    background-color: #DEEDF0;
+nav {
+  background-color: #FFF;
+  z-index: 97;
 }
-
 
 /* Centered text */
 .centered {
@@ -25,16 +25,8 @@ input:focus::placeholder {
     animation: fadeIn 4s;
   }
 
-  @media screen and (max-width: 670px) {
-    .centered {
-      font-size: 5.5vw;
-      top: 60%;
-    }
-  }
-
-  /* Centered Sub-text */
 .centered-subtext {
-    position: absolute;
+    position:absolute;
     top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -48,6 +40,21 @@ input:focus::placeholder {
     .centered-subtext {
       font-size: 2.5vw;
       top: 65%;
+    }
+    .centered {
+      font-size: 5.5vw;
+      top: 68%
+    }
+  }
+    @media screen and (max-width: 440px) {
+    .centered{
+      font-size: 6vw;
+      top: 20%
+    }
+
+    .centered-subtext {
+      font-size: 2.5vw;
+      top: 23%;
     }
   }
 
@@ -76,6 +83,12 @@ input:focus::placeholder {
     .socials {
         top: 45%;
         width: 40px;
+    }
+  }
+@media screen and (max-width: 440px) {
+    .socials {
+        top: 55%;
+        width: 30px;
     }
   }
 
@@ -120,6 +133,9 @@ input:focus::placeholder {
   .bounce {
     top: 65%;
     left: 45%;
+  }
+  .arrow {
+    display: none;
   }
 }
 
@@ -182,6 +198,22 @@ input:focus::placeholder {
     }
   }
 
+  @media screen and (max-width: 440px) {
+    .aboutContainer{
+      padding-top: 30px; 
+      padding-left: 50px;
+      padding-right: 30px;
+      padding-bottom: 80px;
+    }
+    .aboutTitle {
+       font-size: 5vw;
+    }
+    .aboutText{
+      font-size: 5vw;
+    }
+
+  }
+
 /* Resume Styles */
 .resumeContainer{
 	width: 100%;
@@ -239,13 +271,26 @@ input:focus::placeholder {
   padding-bottom: 100px;
 }
 
+.downloadContainer2{
+  display: none;
+}
+
 @media screen and (max-width: 670px) {
     .resumeTitle{
       font-size: 6vw;
     }
 
-    .resumeDownload{
-      font-size: 2vw;
+    .resumeDownload2{
+      padding-left: 50px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-weight: 200;
+      color: #000;
+    }
+
+    .downloadLink{
+      padding-left: 60px;
+      padding-bottom: 20px;
     }
 
     .resumeImage{
@@ -253,10 +298,54 @@ input:focus::placeholder {
        padding-left: 50px;
     }
     
-    .downloadIcon {
-      width: 18%;
+    /* .downloadIcon {
+      width: 8%;
+    } */
+
+    .downloadContainer{
+      visibility: hidden;
+    }
+
+    .downloadContainer2{
+      display:contents;
+    }
+
+  }
+
+  @media screen and (max-width: 440px) {
+    .downloadContainer{
+      visibility: hidden;
+    }
+
+    .downloadContainer2{
+      padding-left: 30%;
+    }
+
+    .resumeDownload2{
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-weight: 200;
+      color: #000;
+    }
+
+    .downloadLink{
+      padding-left: 60px;
+      padding-bottom: 20px;
+    }
+
+    .resumeImage{
+      width: 100%;
+       padding-left: 22px;
+       padding-right: 22px;
+       padding-bottom: 30px;
+       padding-top: 0;
+    }
+    
+    .downloadIcon2 {
+      width: 20%;
     }
   }
+  
 
 /* Contact Styles */
 #waviy {
@@ -360,7 +449,7 @@ input:focus, textarea:focus, select:focus {
   border-radius: 20px;
   transition: all 0.2s ease 0s;
   cursor: pointer;
-  }
+  } */
 
 button:hover {
   box-shadow: 0px 10px 15px #ffd3b7;

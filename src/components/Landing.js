@@ -1,8 +1,6 @@
-import Socials from "./Socials";
-
 const Landing = () => {
   return (
-    <section>
+    <div>
       <img
         id="landing"
         src="./images/landing-image.png"
@@ -11,16 +9,14 @@ const Landing = () => {
         className="d-inline-block align-top d-flex justify-content-start"
         alt="Mariah's Landing"
       />
-      <div>
-        <h6 className="centered">Mariah Feser</h6>
-        <p className="centered-subtext">Full-Stack Developer</p>
-        <div className="bounce">
-          <a href="#about">
-            <i className="arrow"></i>
-          </a>
-        </div>
+      <h6 className="centered">Mariah Feser</h6>
+      <p className="centered-subtext">Full-Stack Developer</p>
+      <div className="bounce">
+        <a href="#about">
+          <i className="arrow"></i>
+        </a>
       </div>
-    </section>
+    </div>
   );
 };
 

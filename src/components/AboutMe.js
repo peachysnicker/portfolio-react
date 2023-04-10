@@ -23,7 +23,7 @@ const AboutMe = () => {
     <div id="about" className="aboutContainer">
       <div>
         {/* <h2 className="reveal">About Me</h2> */}
-        <h3 className="reveal1 aboutTitle">Let me introduce myself!</h3>
+        <h3 className="reveal aboutTitle">Let me introduce myself!</h3>
         <p className="reveal aboutSubTitle">
           My name is Mariah Feser, I am a full-stack developer from British
           Columbia, Canada.

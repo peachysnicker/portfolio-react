@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header>
-      <div id="thanks" className="m-0">
-        <p className="p-2 m-0 text-center"></p>
-      </div>
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-lg">
         <img
           id="logo"
           src="./images/logo.png"
@@ -17,9 +20,15 @@ const Header = () => {
           className="d-inline-block align-top d-flex justify-content-start"
           alt="Mariah's Logo"
         />
-        <div className="navbar-collapse" id="navbarNav">
+        <button className="navbar-toggler" type="button" onClick={toggleMenu}>
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
-            <li className="nav-item active">
+            <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home <span className="sr-only"></span>
               </Link>
